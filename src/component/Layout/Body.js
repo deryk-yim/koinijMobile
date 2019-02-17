@@ -1,17 +1,11 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
-
-const bodyStyles = StyleSheet.create({
-    container: {
-        flex: 0.85,
-    }
-});
+import { View } from 'react-native';
+import { bodyStyles } from './styles';
 
 export default (props) => {
     const { children } = props;
-    const { container } = bodyStyles;
     return (
-        <View style={container}>
+        <View style={bodyStyles.container}>
             {children}
         </View>
     );

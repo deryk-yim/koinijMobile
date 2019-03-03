@@ -26,6 +26,15 @@ const routes = {
         sideMenu: true,
         screen: CONTAINERS.AddTransaction,
     },
+    RecurringBillsDetails: {
+        label: 'RECURRING BILLS',
+        sideMenu: true,
+        screen: CONTAINERS.RecurringBills.Details,
+    },
+    RecurringBillsFrequency: {
+        sideMenu: false,
+        screen: CONTAINERS.RecurringBills.Frequency,
+    },
     Tracking: {
         label: 'TRACKING',
         sideMenu: true,
@@ -43,7 +52,7 @@ const SideMenu = ({ navigation }) => (
 const MainNavigation = createDrawerNavigator(
     routes,
     {
-        initialRouteName: 'Home',
+        initialRouteName: 'RecurringBillsFrequency',
         contentComponent: SideMenu,
     }
 );

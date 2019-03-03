@@ -17,5 +17,6 @@ export const formStyles = StyleSheet.create({
         borderColor: COLOR.primary,
         borderWidth: 2,
         borderRadius: 13,
+        justifyContent: 'center', //vertical align text
     }
 });

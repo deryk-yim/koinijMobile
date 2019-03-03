@@ -2,6 +2,7 @@ import React from 'react';
 import {
     View,
     Text,
+    SafeAreaView,
 } from 'react-native';
 import Button from '../Button';
 
@@ -11,7 +12,7 @@ export default (props) => {
     const { navigation } = props;
 
     return (
-        <View style={headerStyles.container}>
+        <SafeAreaView style={headerStyles.container}>
             <View style={headerStyles.koinijContainer}>
                 <Text style={headerStyles.koinijText} onPress={() => navigation.openDrawer()} >
                     Koinij<Text style={headerStyles.koinijAccent}>.</Text>
@@ -25,7 +26,7 @@ export default (props) => {
                     <Text style={headerStyles.notificationText}>3</Text>
                 </Button.Circular>
             </View>
-        </View>
+        </SafeAreaView>
     );
 };
 

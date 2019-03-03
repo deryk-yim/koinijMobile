@@ -1,8 +1,9 @@
 import React from 'react';
 import { View } from 'react-native';
+import PropTypes from 'prop-types';
 import { bodyStyles } from './styles';
 
-export default (props) => {
+const Body = (props) => {
     const { children } = props;
     return (
         <View style={bodyStyles.container}>
@@ -10,3 +11,9 @@ export default (props) => {
         </View>
     );
 };
+
+Body.propType = {
+    children: PropTypes.node,
+};
+
+export default Body;

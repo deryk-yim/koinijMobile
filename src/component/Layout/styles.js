@@ -1,7 +1,7 @@
 import { StyleSheet, Dimensions } from 'react-native';
 import { COLOR } from '../../styles/common';
 
-const SCREEN_WIDTH = Dimensions.get('window').width;
+const screen = Dimensions.get('window');
 
 export const headerStyles = StyleSheet.create({
     container: {
@@ -38,12 +38,10 @@ export const bodyStyles = StyleSheet.create({
 });
 
 export const layoutStyles = StyleSheet.create({
-    safeAreaContainer: {
-        flex: 1,
-    },
     container: {
         flex: 1,
-        paddingLeft: SCREEN_WIDTH * 0.05,
-        paddingRight: SCREEN_WIDTH * 0.05,
-    }
+        paddingLeft: screen.width * 0.10,
+        paddingRight: screen.width * 0.10,
+        backgroundColor: COLOR.white,
+    },
 });

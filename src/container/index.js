@@ -2,6 +2,7 @@ import AddTransaction from './AddTransaction';
 import Home from './Home';
 import Login from './Login';
 import Register from './Register';
+import RecurringBills from './RecurringBills';
 import Tracking from './Tracking';
 
 export default {
@@ -9,5 +10,6 @@ export default {
     Home,
     Login,
     Register,
+    RecurringBills,
     Tracking,
 };
